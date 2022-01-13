@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cyan;
+}
+.box{
+    background-color: white;
+    width: 80%;
+    margin: 100px auto;
+}
+.one{
+    background-color: yellow;
+    height: 50px;
+}
+.two{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.three{
+    background-color: brown;
+    height: 150px;
+    width: 150px;
+}
