@@ -30,40 +30,48 @@
         <textarea
           name="comment"
           id="message"
-          cols="30"
+          cols="80"
           rows="10"
           placeholder="Enter your comment your "
           maxlength="10"
-          style="resize: none;"
+          style="resize: none"
           required
         ></textarea>
-        <br><br>
-         
+        <br /><br />
+
         <div>
-            <label for="mybrowser" > Browser : </label>
-            <br>
-            <input type="text" name="browser-option" id="mybrowser" list="browsers" >
-            <datalist id="browsers" >
-                <option value="Chrome"></option>
-                <option value="Safari"></option>
-                <option value="Mozilla"></option>
-                <option value="Opera"></option>
-            </datalist>
-
-        </div> 
-
+          <label for="mybrowser"> Browser: </label>
+          <br />
+          <input
+            type="text"
+            name="browser-option"
+            id="mybrowser"
+            list="browsers"
+          />
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+            <option value="Mozilla"></option>
+            <option value="Opera"></option>
+          </datalist>
+        </div>
       </div>
-      <br><br><br>
+      <br /><br /><br />
 
-      <fieldset style="width: 50%; border: dotted; "  >
-          <legend>Personel Info</legend>
-          <label for="firstname"> First Name: </label>
-          <input type="text" name="name" id="firstname" placeholder="Name" >
-          <label for="lastname"> Last Name: </label>
-          <input type="text" name="last name" id="lastname" placeholder="Last Name" >
+      <fieldset style="width: 50%; border: dotted">
+        <legend style="text-align:center">Personel Info</legend>
+        <label for="firstname"> First Name: </label>
+        <input type="text" name="name" id="firstname" placeholder="Name" />
+        <label for="lastname"> Last Name: </label>
+        <input
+          type="text"
+          name="last name"
+          id="lastname"
+          placeholder="Last Name"
+        />
       </fieldset>
-      <br><br>
-      <input type="submit" value="Send">
+      <br /><br />
+      <input type="submit" value="Send" />
     </form>
   </body>
 </html>
