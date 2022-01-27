@@ -1,138 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Elements</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name ="keywords" content="IT ,Bootcamp" / >
+    <link rel="shortcut icon" href="./images/cw-favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
     <style>
-        #userInfo{
-            background-color:rgba(0,150,255,0.8);
-        }
-        #genderInfo{
-            background-color: #9201aa;
-            border-top:5px solid #3b9038;
-        }
-        #favourite{
-
-            /* border-width: 5px;
-            border-style:groove;
-            border-color: darkcyan; */
-
-            border:5px groove darkcyan;
-            border-top-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-        }
-        input{
-            background-color: darksalmon;
-        }
-        #yas{
-            background-color: rgb(126, 33, 104);
-        }
-        #ara{
-            background-color: #99DBF3;
-        }
-        #birthDate{
-            border-top:5px dotted rgb(201,06,28)
-        }
+      /* h2{
+        color: 
+        blue;
+    } */
+      /* p{
+        color: seagreen;
+    } */
     </style>
-</head>
-<body>
-    <form action="result.html">
-        <h1>SİZİ TANIYALIM</h1>
-        <!-- ----------INPUT TEXT PASSWORD-------- -->
-        <div id="userInfo">            
-            <label for="ad">AD:</label>
-            <input type="text" name="username" id="ad" placeholder="Adınızı giriniz..." >
-            <br><br>
-            <label for="soyad">SOYAD:</label>
-            <input type="text" name="surname" id="soyad" placeholder="Soyadınızı giriniz..." >
-            <br><br>
-            <label for="sifre">ŞİFRE:</label>
-            <input type="password" name="password" id="sifre" placeholder="Şifre giriniz..." >
-        </div>
-        
-        <!-- ------------RADIO BUTTON------------- -->
-        <div id="genderInfo">
-            <h3>CİNSİYET</h3>
+    <title>Ders</title>
+  </head>
+  <body>
+    <h1>HTML CSS Review</h1>
+    <!-- heading -->
+    <h1>heading element</h1>
+    <h2>heading element</h2>
+    <h3>heading element</h3>
+    <h4>heading element</h4>
+    <h5>heading element</h5>
+    <h6>heading element</h6>
 
-            <input type="radio" name="cinsiyet" id="gender1" value="erkek">
-            <label for="gender1">Erkek</label>
+    <!-- text -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+      labore officiis recusandae iste repudiandae natus distinctio nesciunt est
+      in reiciendis ea, mollitia, nemo voluptatibus cupiditate sint voluptatum
+      debitis aut corrupti.
+    </p>
+    <br />
+    <hr />
+    <!-- formating -->
+    <p>
+      <i>Lorem ipsum</i> <b> dolor sit</b> amet consectetur,
+      <strong>adipisicing</strong> <em>elit.</em> Sequi, eos!
+    </p>
 
-            <input type="radio" name="cinsiyet" id="gender2" value="bayan">
-            <label for="gender2">Bayan</label>
-        </div>
-        <hr>
-        <!-- ------------CHECKBOX------------- -->
-        <div id="favourite">
-            <h4>En Sevdiğiniz Hayvanlar:</h4>
-            <input type="checkbox" name="animal" id="panda" value="panda">
-            <label for="panda">Panda</label>
+    <p>
+      Lorem ipsum dolor sit amet consectetur <u>adipisicing elit</u> . Tenetur,
+      excepturi.
+    </p>
+    <p>phone : <del>800$</del> 500$</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <mark> john</mark> Mollitia, vitae!
+    </p>
 
-            <input type="checkbox" name="animal" id="kedi" value="kedi" checked>
-            <label for="kedi">Kedi</label>
+    <p>X <sup>2</sup></p>
+    <p>O <sup>2</sup></p>
 
-            <input type="checkbox" name="animal" id="kuzu" value="kuzu">
-            <label for="kuzu">Kuzu</label>
-        </div>
-        <br>
-        <hr>
-        <div>
-            <label for="yas">YAŞ:</label>
-            <input type="number" name="age" id="yas" min=7 max=70>
-        </div>
-        <br>
-        <div>
-            <label for="ara">Kitap ara:</label>
-            <input type="search" name="search" id="ara" placeholder="Aranacak kelimeyi girin...">
-        </div>
-        <br>
-        <div>
-            <label for="renk">Sevdiğiniz Renk:</label>
-            <input type="color" name="color" id="renk">
-        </div>
-        <br>
-        <div>
-            <label for="eposta">Email:</label>
-            <input type="email" name="email" id="eposta" placeholder="example@example.com" required >
-        </div>
-        <br>
-        <div>
-            <label for="dosya">Profil Fotoğrafı:</label>
-            <input type="file" name="file" id="dosya" multiple>
-        </div>
-        <br>
-        <div>
-            <label for="tel">Telefon No:</label>
-            <input type="tel" name="phone" id="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            placeholder="xxx-xxx-xx-xx">
-            <!-- 555-555-55-55 -->
-        </div>
-        <br>
-        <div>
-            <label for="">Hangi Tatlıyı Seversiniz?:</label>
-            <select name="" id="">
-                <option value="sütlac">Sütlaç</option>
-                <option value="baklava" selected>Baklava</option>
-                <option value="puding">puding</option>
-                <option value="kadayif">Kadayıf Dolması</option>
-            </select>
-        </div>
-        <br>
-        <div id="birthDate">
-            <label for="dogum">Doğum Tarihi Seçin:</label>
-            <input type="date" name="date" id="dogum"   value="2018-07-22"
-            min="2018-01-01" max="2018-12-31">
-        </div>
+    <!-- lists -->
 
-        <input type="reset">
-        <input type="submit" >
+    <h3>Unordered Lİsts</h3>
+    <h3>Cars</h3>
+    <ul type="square">
+      <li>Ferrari </li>
+      <ul>
+        <li>Before 2000</li>
+        <li>After 2000</li>
+      </ul> 
+      <li>porche</li>
+      <li>Tesla</li>
+    </ul>
+    <hr />
 
+    <h3>Ordered list</h3>
+    <h3>Cities</h3>
+    <ol start="5" type="A">
+      <li>london</li>
+      <li>paris</li>
+      <li>hatay</li>
+      <li>newyork</li>
+    </ol>
 
+    <dl>
+      <dt>John</dt>
+      <dd>fener</dd>
+      <dt>alex</dt>
+      <dd>10</dd>
+    </dl>
 
-    </form>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</body>
+    <hr />
+
+    <!-- images -->
+    <p>images</p>
+    <img src="./images/newyork.jpg" alt="Newyork" width="200px" />
+    <img src="./images/sea1.jpg" alt="Seaside" width="200" />
+
+    <!-- Tables -->
+    <table border="1" width="50%" style="border-collapse: collapse">
+      <caption style="text-align: left; caption-side: bottom" ;>
+        Instructor john
+      </caption>
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>PATH</th>
+          <th>LESSON</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>john</td>
+          <td colspan="2">fb</td>
+          <!-- <td>alex</td> -->
+        </tr>
+        <tr>
+          <td>john</td>
+          <td>fb</td>
+          <td rowspan="2">alex</td>
+        </tr>
+        <tr>
+          <td>john</td>
+          <td>fb</td>
+          <!-- <td>alex</td> -->
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- links -->
+    <a href="https://www.google.com/" target="_blank">GOOGLE </a>
+    <p><a href="https://www.google.com/">google</a></p>
+    <a href="https://www.google.com/" target="_blank">
+      <img src="./images/sea2.jpg " alt="" />
+    </a>
+
+    <p><a href="images/sea1 - Kopya.zip">Downland file</a></p>
+    <iframe
+      src="https://www.sozcu.com.tr/"
+      frameborder="1"
+      width="70%"
+    ></iframe>
+
+    <div class="first" style="color: red">
+      <h2 id="first-heading">first</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem
+        deleniti perferendis aliquid voluptatibus debitis, eligendi aut illo
+        dolorum quae.
+      </p>
+    </div>
+    <div class="first" style="color: blue">
+      <h2 id="second-heading">second</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo sit
+        suscipit ullam laboriosam inventore nostrum aspernatur quisquam placeat
+        rem at.
+      </p>
+    </div>
+    <div class="second" style="color: gold">
+      <h2 id="third-headsin">second</h2>
+      <p>
+        <span id="span-word">third</span> Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Quo sit suscipit ullam laboriosam
+        inventore nostrum aspernatur quisquam placeat rem at.
+      </p>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
 </html>
